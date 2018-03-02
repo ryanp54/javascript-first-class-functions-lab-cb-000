@@ -24,10 +24,10 @@ function multiplier(a, b) {
 }
 
 function doublerWithBind(b) {
-	return multiplier.bind(this, 2, b)
+	return multiplier.bind(this, 2, b)()
 }
 
 
 function triplerWithBind(b) {
-	return multiplier.bind(this, 3, b)
+	return multiplier.bind(this, 3, b)()
 }
